@@ -1,5 +1,17 @@
 @import "tailwindcss";
-@config "../tailwind.config.js";
+
+@theme {
+  --color-primary: #1E3A8A;
+  --color-secondary: #10B981;
+  --color-surface: #F8FAFC;
+  --color-surface-dark: #0F172A;
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+  --color-muted-indigo: #6366F1;
+  --color-slate-blue: #3B82F6;
+  
+  --font-sans: "Inter", sans-serif;
+}
 
 @layer base {
   body {
@@ -7,9 +19,7 @@
   }
 }
 
-@layer utilities {
-  .bg-grid-pattern {
-    background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
+@utility bg-grid-pattern {
+  background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-size: 40px 40px;
 }
